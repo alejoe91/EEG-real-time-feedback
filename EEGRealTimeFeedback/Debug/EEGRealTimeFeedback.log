@@ -1,0 +1,589 @@
+﻿Build started 9/23/2015 1:47:51 PM.
+     1>Project "C:\Users\alessio\Documents\Visual Studio 2013\Projects\EEG_NIRS\EEGRealTimeFeedbackMultiThread\EEGRealTimeFeedback\EEGRealTimeFeedback.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\alessio\Documents\boost_1_57_0 /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\EEGRealTimeFeedback.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\alessio\Documents\boost_1_57_0 /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ControllerTest.cpp ControllerThread.cpp EEGHandler.cpp EEGRealTimeFeedback.cpp MicroEEGConnector.cpp ProcessingThread.cpp StreamingThread.cpp UDPClient.cpp USBController.cpp
+         USBController.cpp
+         UDPClient.cpp
+         StreamingThread.cpp
+         ProcessingThread.cpp
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\processingthread.cpp(13): error C3861: 'loadFilter': identifier not found
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\processingthread.cpp(22): error C3861: 'loadFilter': identifier not found
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\processingthread.cpp(231): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         MicroEEGConnector.cpp
+         EEGRealTimeFeedback.cpp
+         EEGHandler.cpp
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(18): error C2664: 'void std::vector<std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>::push_back(const std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> &)' : cannot convert argument 1 from 'std::vector<double,std::allocator<_Ty>>' to 'std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> &&'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Reason: cannot convert from 'std::vector<double,std::allocator<_Ty>>' to 'std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(21): error C2664: 'void std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>::push_back(const std::vector<_Ty,std::allocator<_Ty>> &)' : cannot convert argument 1 from 'int' to 'std::vector<double,std::allocator<_Ty>> &&'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Reason: cannot convert from 'int' to 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Constructor for class 'std::vector<double,std::allocator<_Ty>>' is declared 'explicit'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(24): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'std::vector<double,std::allocator<_Ty>>' (or there is no acceptable conversion)
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(948): could be 'std::vector<std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>> &std::vector<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>::operator =(const std::vector<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>> &)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(926): or       'std::vector<std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>> &std::vector<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>::operator =(std::initializer_list<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(822): or       'std::vector<std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>> &std::vector<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>::operator =(std::vector<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>> &&)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 while trying to match the argument list '(std::vector<std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>, std::vector<double,std::allocator<_Ty>>)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(34): error C2664: 'void std::vector<std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>::push_back(const std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> &)' : cannot convert argument 1 from 'std::vector<double,std::allocator<_Ty>>' to 'std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> &&'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Reason: cannot convert from 'std::vector<double,std::allocator<_Ty>>' to 'std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(36): error C2664: 'void std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>::push_back(const std::vector<_Ty,std::allocator<_Ty>> &)' : cannot convert argument 1 from 'int' to 'std::vector<double,std::allocator<_Ty>> &&'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Reason: cannot convert from 'int' to 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Constructor for class 'std::vector<double,std::allocator<_Ty>>' is declared 'explicit'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(59): error C2664: 'void std::vector<std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>::push_back(const std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> &)' : cannot convert argument 1 from 'std::vector<double,std::allocator<_Ty>>' to 'std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> &&'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Reason: cannot convert from 'std::vector<double,std::allocator<_Ty>>' to 'std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(61): error C2664: 'void std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>::push_back(const std::vector<_Ty,std::allocator<_Ty>> &)' : cannot convert argument 1 from 'int' to 'std::vector<double,std::allocator<_Ty>> &&'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Reason: cannot convert from 'int' to 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Constructor for class 'std::vector<double,std::allocator<_Ty>>' is declared 'explicit'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(62): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(62): error C2228: left of '.push_back' must have class/struct/union
+                 type is 'unknown-type'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(86): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'std::vector<double,std::allocator<_Ty>>' (or there is no acceptable conversion)
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(948): could be 'std::vector<std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>> &std::vector<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>::operator =(const std::vector<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>> &)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(926): or       'std::vector<std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>> &std::vector<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>::operator =(std::initializer_list<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(822): or       'std::vector<std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>> &std::vector<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>::operator =(std::vector<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>> &&)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 while trying to match the argument list '(std::vector<std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>, std::vector<double,std::allocator<_Ty>>)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(118): error C2664: 'std::vector<double,std::allocator<_Ty>>::vector(std::initializer_list<double>,const std::allocator<_Ty> &)' : cannot convert argument 1 from 'std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' to 'const std::vector<double,std::allocator<_Ty>> &'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Reason: cannot convert from 'std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' to 'const std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(304): error C2664: 'double EEGHandler::computeMean(std::vector<double,std::allocator<_Ty>>)' : cannot convert argument 1 from 'std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' to 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(324): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'double' (or there is no acceptable conversion)
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(948): could be 'std::vector<double,std::allocator<_Ty>> &std::vector<_Ty,std::allocator<_Ty>>::operator =(const std::vector<_Ty,std::allocator<_Ty>> &)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(926): or       'std::vector<double,std::allocator<_Ty>> &std::vector<_Ty,std::allocator<_Ty>>::operator =(std::initializer_list<double>)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(822): or       'std::vector<double,std::allocator<_Ty>> &std::vector<_Ty,std::allocator<_Ty>>::operator =(std::vector<_Ty,std::allocator<_Ty>> &&)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 while trying to match the argument list '(std::vector<double,std::allocator<_Ty>>, double)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::array<_Ty,_Size> &,const std::array<_Ty,_Size> &)' : could not deduce template argument for 'const std::array<_Ty,_Size> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\array(463) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\array(463) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\array(463) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\array(463) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::list<_Ty,_Alloc> &,const std::list<_Ty,_Alloc> &)' : could not deduce template argument for 'const std::list<_Ty,_Alloc> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\list(1967) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\list(1967) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\list(1967) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\list(1967) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::_Tree<_Traits> &,const std::_Tree<_Traits> &)' : could not deduce template argument for 'const std::_Tree<_Traits> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xtree(2266) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xtree(2266) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xtree(2266) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xtree(2266) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::tuple<_Types...> &,const std::tuple<_Types1...> &)' : could not deduce template argument for 'const std::tuple<_Types...> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\tuple(496) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\tuple(496) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\tuple(496) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\tuple(496) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)' : could not deduce template argument for 'const std::unique_ptr<_Ty,_Dx> &' from 'int'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1803) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)' : could not deduce template argument for 'const std::unique_ptr<_Ty,_Dx> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1795) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1795) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1795) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1795) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)' : could not deduce template argument for 'const std::unique_ptr<_Ty,_Dx> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1711) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1711) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1711) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1711) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(std::nullptr_t,const std::shared_ptr<_Ty> &) throw()' : could not deduce template argument for 'const std::shared_ptr<_Ty> &' from 'int'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(854) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::shared_ptr<_Ty> &,std::nullptr_t) throw()' : could not deduce template argument for 'const std::shared_ptr<_Ty> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(847) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(847) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(847) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(847) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty2> &) throw()' : could not deduce template argument for 'const std::shared_ptr<_Ty> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(776) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(776) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(776) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(776) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)' : could not deduce template argument for 'const std::vector<_Ty,_Alloc> &' from 'int'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1822) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *)' : could not deduce template argument for 'const std::basic_string<_Elem,_Traits,_Alloc> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2575) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2575) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2575) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2575) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const _Elem *,const std::basic_string<_Elem,_Traits,_Alloc> &)' : could not deduce template argument for 'const _Elem *' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2565) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &)' : could not deduce template argument for 'const std::basic_string<_Elem,_Traits,_Alloc> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2555) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2555) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2555) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2555) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::move_iterator<_RanIt> &,const std::move_iterator<_RanIt2> &)' : could not deduce template argument for 'const std::move_iterator<_RanIt> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(2006) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(2006) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(2006) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(2006) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::reverse_iterator<_RanIt> &,const std::reverse_iterator<_RanIt2> &)' : could not deduce template argument for 'const std::reverse_iterator<_RanIt> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1163) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1163) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1163) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1163) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::_Revranit<_RanIt,_Base> &,const std::_Revranit<_RanIt2,_Base2> &)' : could not deduce template argument for 'const std::_Revranit<_RanIt,_Base> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(982) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(982) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(982) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(982) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2784: 'bool std::operator >(const std::pair<_Ty1,_Ty2> &,const std::pair<_Ty1,_Ty2> &)' : could not deduce template argument for 'const std::pair<_Ty1,_Ty2> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\utility(239) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\utility(239) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\utility(239) : see declaration of 'std::operator >'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\utility(239) : see declaration of 'std::operator >'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(327): error C2676: binary '>' : 'std::vector<double,std::allocator<_Ty>>' does not define this operator or a conversion to a type acceptable to the predefined operator
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(328): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(948): could be 'std::vector<double,std::allocator<_Ty>> &std::vector<_Ty,std::allocator<_Ty>>::operator =(const std::vector<_Ty,std::allocator<_Ty>> &)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(926): or       'std::vector<double,std::allocator<_Ty>> &std::vector<_Ty,std::allocator<_Ty>>::operator =(std::initializer_list<double>)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(822): or       'std::vector<double,std::allocator<_Ty>> &std::vector<_Ty,std::allocator<_Ty>>::operator =(std::vector<_Ty,std::allocator<_Ty>> &&)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 while trying to match the argument list '(std::vector<double,std::allocator<_Ty>>, int)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::array<_Ty,_Size> &,const std::array<_Ty,_Size> &)' : could not deduce template argument for 'const std::array<_Ty,_Size> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\array(454) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\array(454) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\array(454) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\array(454) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::list<_Ty,_Alloc> &,const std::list<_Ty,_Alloc> &)' : could not deduce template argument for 'const std::list<_Ty,_Alloc> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\list(1958) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\list(1958) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\list(1958) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\list(1958) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::_Tree<_Traits> &,const std::_Tree<_Traits> &)' : could not deduce template argument for 'const std::_Tree<_Traits> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xtree(2259) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xtree(2259) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xtree(2259) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xtree(2259) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::tuple<_Types...> &,const std::tuple<_Types1...> &)' : could not deduce template argument for 'const std::tuple<_Types...> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\tuple(480) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\tuple(480) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\tuple(480) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\tuple(480) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(std::nullptr_t,const std::unique_ptr<_Ty,_Dx> &)' : could not deduce template argument for 'const std::unique_ptr<_Ty,_Dx> &' from 'int'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1770) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,std::nullptr_t)' : could not deduce template argument for 'const std::unique_ptr<_Ty,_Dx> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1761) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1761) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1761) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1761) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::unique_ptr<_Ty,_Dx> &,const std::unique_ptr<_Ty2,_Dx2> &)' : could not deduce template argument for 'const std::unique_ptr<_Ty,_Dx> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1688) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1688) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1688) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(1688) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(std::nullptr_t,const std::shared_ptr<_Ty> &) throw()' : could not deduce template argument for 'const std::shared_ptr<_Ty> &' from 'int'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(826) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::shared_ptr<_Ty> &,std::nullptr_t) throw()' : could not deduce template argument for 'const std::shared_ptr<_Ty> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(819) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(819) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(819) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(819) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::shared_ptr<_Ty> &,const std::shared_ptr<_Ty2> &) throw()' : could not deduce template argument for 'const std::shared_ptr<_Ty> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(758) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(758) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(758) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\memory(758) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::vector<_Ty,_Alloc> &,const std::vector<_Ty,_Alloc> &)' : could not deduce template argument for 'const std::vector<_Ty,_Alloc> &' from 'int'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1813) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *)' : could not deduce template argument for 'const std::basic_string<_Elem,_Traits,_Alloc> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2545) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2545) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2545) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2545) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const _Elem *,const std::basic_string<_Elem,_Traits,_Alloc> &)' : could not deduce template argument for 'const _Elem *' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2535) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &)' : could not deduce template argument for 'const std::basic_string<_Elem,_Traits,_Alloc> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2525) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2525) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2525) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(2525) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::move_iterator<_RanIt> &,const std::move_iterator<_RanIt2> &)' : could not deduce template argument for 'const std::move_iterator<_RanIt> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1997) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1997) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1997) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1997) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::reverse_iterator<_RanIt> &,const std::reverse_iterator<_RanIt2> &)' : could not deduce template argument for 'const std::reverse_iterator<_RanIt> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1155) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1155) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1155) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1155) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::_Revranit<_RanIt,_Base> &,const std::_Revranit<_RanIt2,_Base2> &)' : could not deduce template argument for 'const std::_Revranit<_RanIt,_Base> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(971) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(971) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(971) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(971) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2784: 'bool std::operator <(const std::pair<_Ty1,_Ty2> &,const std::pair<_Ty1,_Ty2> &)' : could not deduce template argument for 'const std::pair<_Ty1,_Ty2> &' from 'std::vector<double,std::allocator<_Ty>>'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\utility(230) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\utility(230) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\utility(230) : see declaration of 'std::operator <'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\utility(230) : see declaration of 'std::operator <'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(329): error C2676: binary '<' : 'std::vector<double,std::allocator<_Ty>>' does not define this operator or a conversion to a type acceptable to the predefined operator
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(330): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(948): could be 'std::vector<double,std::allocator<_Ty>> &std::vector<_Ty,std::allocator<_Ty>>::operator =(const std::vector<_Ty,std::allocator<_Ty>> &)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(926): or       'std::vector<double,std::allocator<_Ty>> &std::vector<_Ty,std::allocator<_Ty>>::operator =(std::initializer_list<double>)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(822): or       'std::vector<double,std::allocator<_Ty>> &std::vector<_Ty,std::allocator<_Ty>>::operator =(std::vector<_Ty,std::allocator<_Ty>> &&)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 while trying to match the argument list '(std::vector<double,std::allocator<_Ty>>, int)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(341): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(341): error C2664: 'void EEGHandler::filterFIR(std::vector<double,std::allocator<_Ty>> *,std::vector<_Ty,std::allocator<_Ty>> *,std::vector<_Ty,std::allocator<_Ty>> *,int,int,bool,int)' : cannot convert argument 3 from 'unsigned int' to 'std::vector<double,std::allocator<_Ty>> *'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(348): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(349): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(350): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(351): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(357): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(359): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(360): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(363): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(368): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(371): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(372): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(373): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(374): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(377): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(383): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(383): error C2664: 'void EEGHandler::filterFIR(std::vector<double,std::allocator<_Ty>> *,std::vector<_Ty,std::allocator<_Ty>> *,std::vector<_Ty,std::allocator<_Ty>> *,int,int,bool,int)' : cannot convert argument 3 from 'unsigned int' to 'std::vector<double,std::allocator<_Ty>> *'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(392): error C2065: 'eegBufferMu' : undeclared identifier
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(392): error C2228: left of '.begin' must have class/struct/union
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(392): error C2228: left of '.end' must have class/struct/union
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(392): error C2780: '_OutTy *std::copy(_InIt,_InIt,_OutTy (&)[_OutSize])' : expects 3 arguments - 1 provided
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(2140) : see declaration of 'std::copy'
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.cpp(392): error C2780: '_OutIt std::copy(_InIt,_InIt,_OutIt)' : expects 3 arguments - 1 provided
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(2122) : see declaration of 'std::copy'
+         ControllerThread.cpp
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\controllerthread.cpp(13): error C2664: 'ProcessingThread::ProcessingThread(const ProcessingThread &)' : cannot convert argument 7 from 'std::string' to 'std::vector<std::string,std::allocator<_Ty>> &'
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\controllerthread.cpp(20): error C2664: 'ProcessingThread::ProcessingThread(const ProcessingThread &)' : cannot convert argument 7 from 'std::string' to 'std::vector<std::string,std::allocator<_Ty>> &'
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+         ControllerTest.cpp
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\controllertest.cpp(26): error C2665: 'EEGHandler::EEGHandler' : none of the 4 overloads could convert all the argument types
+                 c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.h(73): could be 'EEGHandler::EEGHandler(int,std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::vector<_Ty,std::allocator<_Ty>>)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 while trying to match the argument list '(int, std::vector<double,std::allocator<_Ty>>, std::vector<double,std::allocator<_Ty>>)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\controllertest.cpp(27): error C2665: 'EEGHandler::EEGHandler' : none of the 4 overloads could convert all the argument types
+                 c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\eeghandler.h(73): could be 'EEGHandler::EEGHandler(int,std::vector<std::vector<double,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::vector<_Ty,std::allocator<_Ty>>)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+                 while trying to match the argument list '(int, std::vector<double,std::allocator<_Ty>>, std::vector<double,std::allocator<_Ty>>)'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\controllertest.cpp(149): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         Generating Code...
+     1>Done Building Project "C:\Users\alessio\Documents\Visual Studio 2013\Projects\EEG_NIRS\EEGRealTimeFeedbackMultiThread\EEGRealTimeFeedback\EEGRealTimeFeedback.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:28.93

@@ -1,0 +1,239 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 12.00.31101.0 (afcaabde).
+//
+// c:\users\alessio\documents\visual studio 2013\projects\eegrealtimefeedbackmultithread\eegrealtimefeedback\release\microeegctrl.tli
+//
+// Wrapper implementations for Win32 type library microEEGCtrl.tlb
+// compiler-generated file created 04/22/15 at 16:51:28 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface ImicroEEGCtrlController wrapper method implementations
+//
+
+inline _bstr_t ImicroEEGCtrlController::GetRecorder ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Recorder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetData ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Data(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetVersion ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Version(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline int ImicroEEGCtrlController::GetChannels ( ) {
+    int _result = 0;
+    HRESULT _hr = get_Channels(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline int ImicroEEGCtrlController::GetSampleRate ( ) {
+    int _result = 0;
+    HRESULT _hr = get_SampleRate(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline __int64 ImicroEEGCtrlController::GetSDSize ( ) {
+    __int64 _result = 0;
+    HRESULT _hr = get_SDSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetSignalStatus ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_SignalStatus(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT ImicroEEGCtrlController::StartRecording ( ) {
+    HRESULT _hr = raw_StartRecording();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetPatientName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PatientName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ImicroEEGCtrlController::PutPatientName ( _bstr_t Value ) {
+    HRESULT _hr = put_PatientName(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetPatientID ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PatientID(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ImicroEEGCtrlController::PutPatientID ( _bstr_t Value ) {
+    HRESULT _hr = put_PatientID(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ImicroEEGCtrlController::GetPatientDOBDay ( ) {
+    int _result = 0;
+    HRESULT _hr = get_PatientDOBDay(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ImicroEEGCtrlController::PutPatientDOBDay ( int Value ) {
+    HRESULT _hr = put_PatientDOBDay(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ImicroEEGCtrlController::GetPatientDOBMonth ( ) {
+    int _result = 0;
+    HRESULT _hr = get_PatientDOBMonth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ImicroEEGCtrlController::PutPatientDOBMonth ( int Value ) {
+    HRESULT _hr = put_PatientDOBMonth(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline int ImicroEEGCtrlController::GetPatientDOBYear ( ) {
+    int _result = 0;
+    HRESULT _hr = get_PatientDOBYear(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ImicroEEGCtrlController::PutPatientDOBYear ( int Value ) {
+    HRESULT _hr = put_PatientDOBYear(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetPatientGender ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_PatientGender(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ImicroEEGCtrlController::PutPatientGender ( _bstr_t Value ) {
+    HRESULT _hr = put_PatientGender(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetComments ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Comments(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ImicroEEGCtrlController::PutComments ( _bstr_t Value ) {
+    HRESULT _hr = put_Comments(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetDataFolder ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DataFolder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ImicroEEGCtrlController::PutDataFolder ( _bstr_t Value ) {
+    HRESULT _hr = put_DataFolder(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ImicroEEGCtrlController::StopRecording ( ) {
+    HRESULT _hr = raw_StopRecording();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetLastMessage ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_LastMessage(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT ImicroEEGCtrlController::SaveResistances ( ) {
+    HRESULT _hr = raw_SaveResistances();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetResistances ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_Resistances(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ImicroEEGCtrlController::PutResistances ( _bstr_t Value ) {
+    HRESULT _hr = put_Resistances(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ImicroEEGCtrlController::ResistanceMode ( ) {
+    HRESULT _hr = raw_ResistanceMode();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ImicroEEGCtrlController::NormalMode ( ) {
+    HRESULT _hr = raw_NormalMode();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetChannelNames ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_ChannelNames(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetDataFileName ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_DataFileName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _bstr_t ImicroEEGCtrlController::GetRecordingTime ( ) {
+    BSTR _result = 0;
+    HRESULT _hr = get_RecordingTime(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline int ImicroEEGCtrlController::GetUDPPort ( ) {
+    int _result = 0;
+    HRESULT _hr = get_UDPPort(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ImicroEEGCtrlController::PutUDPPort ( int Value ) {
+    HRESULT _hr = put_UDPPort(Value);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}

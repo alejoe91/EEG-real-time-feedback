@@ -1,0 +1,225 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 12.00.31101.0 (5bf21413).
+//
+// c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\debug\microeegctrl.tlh
+//
+// C++ source equivalent of Win32 type library microEEGCtrl.tlb
+// compiler-generated file created 09/23/15 at 13:48:11 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("7c92dc54-943a-443e-9c69-7ef1dfed5ce9"))
+/* LIBID */ __microEEGCtrl;
+struct __declspec(uuid("a94f1f44-1b46-42bc-975c-297e9ec36edf"))
+/* dual interface */ ImicroEEGCtrlController;
+struct __declspec(uuid("a6843520-5f5e-42e2-a098-6f4e898ea343"))
+/* dispinterface */ ImicroEEGCtrlControllerEvents;
+struct /* coclass */ microEEGCtrlController;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ImicroEEGCtrlController, __uuidof(ImicroEEGCtrlController));
+_COM_SMARTPTR_TYPEDEF(ImicroEEGCtrlControllerEvents, __uuidof(ImicroEEGCtrlControllerEvents));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("a94f1f44-1b46-42bc-975c-297e9ec36edf"))
+ImicroEEGCtrlController : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetDataFileName))
+    _bstr_t DataFileName;
+    __declspec(property(get=GetRecordingTime))
+    _bstr_t RecordingTime;
+    __declspec(property(get=GetUDPPort,put=PutUDPPort))
+    int UDPPort;
+    __declspec(property(get=GetRecorder))
+    _bstr_t Recorder;
+    __declspec(property(get=GetData))
+    _bstr_t Data;
+    __declspec(property(get=GetVersion))
+    _bstr_t Version;
+    __declspec(property(get=GetChannels))
+    int Channels;
+    __declspec(property(get=GetSampleRate))
+    int SampleRate;
+    __declspec(property(get=GetSDSize))
+    __int64 SDSize;
+    __declspec(property(get=GetSignalStatus))
+    _bstr_t SignalStatus;
+    __declspec(property(get=GetPatientName,put=PutPatientName))
+    _bstr_t PatientName;
+    __declspec(property(get=GetPatientID,put=PutPatientID))
+    _bstr_t PatientID;
+    __declspec(property(get=GetPatientDOBDay,put=PutPatientDOBDay))
+    int PatientDOBDay;
+    __declspec(property(get=GetPatientDOBMonth,put=PutPatientDOBMonth))
+    int PatientDOBMonth;
+    __declspec(property(get=GetPatientDOBYear,put=PutPatientDOBYear))
+    int PatientDOBYear;
+    __declspec(property(get=GetPatientGender,put=PutPatientGender))
+    _bstr_t PatientGender;
+    __declspec(property(get=GetComments,put=PutComments))
+    _bstr_t Comments;
+    __declspec(property(get=GetDataFolder,put=PutDataFolder))
+    _bstr_t DataFolder;
+    __declspec(property(get=GetLastMessage))
+    _bstr_t LastMessage;
+    __declspec(property(get=GetResistances,put=PutResistances))
+    _bstr_t Resistances;
+    __declspec(property(get=GetChannelNames))
+    _bstr_t ChannelNames;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetRecorder ( );
+    _bstr_t GetData ( );
+    _bstr_t GetVersion ( );
+    int GetChannels ( );
+    int GetSampleRate ( );
+    __int64 GetSDSize ( );
+    _bstr_t GetSignalStatus ( );
+    HRESULT StartRecording ( );
+    _bstr_t GetPatientName ( );
+    void PutPatientName (
+        _bstr_t Value );
+    _bstr_t GetPatientID ( );
+    void PutPatientID (
+        _bstr_t Value );
+    int GetPatientDOBDay ( );
+    void PutPatientDOBDay (
+        int Value );
+    int GetPatientDOBMonth ( );
+    void PutPatientDOBMonth (
+        int Value );
+    int GetPatientDOBYear ( );
+    void PutPatientDOBYear (
+        int Value );
+    _bstr_t GetPatientGender ( );
+    void PutPatientGender (
+        _bstr_t Value );
+    _bstr_t GetComments ( );
+    void PutComments (
+        _bstr_t Value );
+    _bstr_t GetDataFolder ( );
+    void PutDataFolder (
+        _bstr_t Value );
+    HRESULT StopRecording ( );
+    _bstr_t GetLastMessage ( );
+    HRESULT SaveResistances ( );
+    _bstr_t GetResistances ( );
+    void PutResistances (
+        _bstr_t Value );
+    HRESULT ResistanceMode ( );
+    HRESULT NormalMode ( );
+    _bstr_t GetChannelNames ( );
+    _bstr_t GetDataFileName ( );
+    _bstr_t GetRecordingTime ( );
+    int GetUDPPort ( );
+    void PutUDPPort (
+        int Value );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Recorder (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_Data (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_Version (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_Channels (
+        /*[out,retval]*/ int * Value ) = 0;
+      virtual HRESULT __stdcall get_SampleRate (
+        /*[out,retval]*/ int * Value ) = 0;
+      virtual HRESULT __stdcall get_SDSize (
+        /*[out,retval]*/ __int64 * Value ) = 0;
+      virtual HRESULT __stdcall get_SignalStatus (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall raw_StartRecording ( ) = 0;
+      virtual HRESULT __stdcall get_PatientName (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_PatientName (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_PatientID (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_PatientID (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_PatientDOBDay (
+        /*[out,retval]*/ int * Value ) = 0;
+      virtual HRESULT __stdcall put_PatientDOBDay (
+        /*[in]*/ int Value ) = 0;
+      virtual HRESULT __stdcall get_PatientDOBMonth (
+        /*[out,retval]*/ int * Value ) = 0;
+      virtual HRESULT __stdcall put_PatientDOBMonth (
+        /*[in]*/ int Value ) = 0;
+      virtual HRESULT __stdcall get_PatientDOBYear (
+        /*[out,retval]*/ int * Value ) = 0;
+      virtual HRESULT __stdcall put_PatientDOBYear (
+        /*[in]*/ int Value ) = 0;
+      virtual HRESULT __stdcall get_PatientGender (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_PatientGender (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_Comments (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Comments (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall get_DataFolder (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_DataFolder (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall raw_StopRecording ( ) = 0;
+      virtual HRESULT __stdcall get_LastMessage (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall raw_SaveResistances ( ) = 0;
+      virtual HRESULT __stdcall get_Resistances (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall put_Resistances (
+        /*[in]*/ BSTR Value ) = 0;
+      virtual HRESULT __stdcall raw_ResistanceMode ( ) = 0;
+      virtual HRESULT __stdcall raw_NormalMode ( ) = 0;
+      virtual HRESULT __stdcall get_ChannelNames (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_DataFileName (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_RecordingTime (
+        /*[out,retval]*/ BSTR * Value ) = 0;
+      virtual HRESULT __stdcall get_UDPPort (
+        /*[out,retval]*/ int * Value ) = 0;
+      virtual HRESULT __stdcall put_UDPPort (
+        /*[in]*/ int Value ) = 0;
+};
+
+struct __declspec(uuid("a6843520-5f5e-42e2-a098-6f4e898ea343"))
+ImicroEEGCtrlControllerEvents : IDispatch
+{};
+
+struct __declspec(uuid("50f8c7be-3d8b-48fe-a789-feb8adc71d3e"))
+microEEGCtrlController;
+    // [ default ] interface ImicroEEGCtrlController
+    // [ default, source ] dispinterface ImicroEEGCtrlControllerEvents
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\users\alessio\documents\visual studio 2013\projects\eeg_nirs\eegrealtimefeedbackmultithread\eegrealtimefeedback\debug\microeegctrl.tli"
+
+#pragma pack(pop)
